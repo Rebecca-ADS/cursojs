@@ -1,29 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<<!DOCTYPE html>
+<html>
     <head>
-        <meta charset="UTF-8" />    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <Link href="estilo.css" rel="stylesheet"
-        
-     </head> 
+        <title>Meu site</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
     <body>
-        <h1>Cabeçalho da página</h1>
+        <header>
+            <h1>Meu site</h1>
+            <nav>
+                <a id="menu-sobre" class="item-menu" href="#sobre-nos">Sobre nós</a>
+                <a id="menu-contato" class="item-menu" href="#contato">Contato</a>
+            </nav>
+        </header>
+        <section id="sobre-nos">
+            <h1>
+                Seja bem-vindo pessoinha ao meu site html
+            </h1>
+        </section>
+        <section id="contato">
+            <h2>
+                Aqui você verá o meu primeiro projeto com estilização e um menu bonito.
+            </h2>
+        </section>
+        <script type="text/javascript">
+            const menuSobre = document.getElementById('menu-sobre');
+            
+            const menuContato = document.querySelector('#menu-contato');
 
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum error dolorem inventore perferendis aspernatur. Cum, eligendi tempore cumque atque dignissimos quisquam a veritatis, earum voluptate molestias, obcaecati vero impedit amet?</p>
-    
-        <h2 class="principal">Titulo principal</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugiat placeat in temporibus molestias, velit a sit commodi mollitia facilis quia? Sed blanditiis dicta architecto dolorem autem vitae impedit nulla?</p>
-    
-        <h3 class="principal">Titulo secundário, mas com mesmo estilo</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam non reprehenderit facere delectus at quaerat dignissimos reiciendis illum? Impedit quibusdam adipisci eum nobis illum quae ut mollitia id consectetur eius?</p>
-    
-        <p class="fonte30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam corporis commodi laboriosam voluptatem corrupti sunt atque amet, incidunt similique esse eveniet enim, delectus, laudantium cupiditate. Voluptatibus, quasi amet! Atque, voluptatem.</p>
-    
-        <p id="estilo-unico">Lorem, ipsum dolor sit amet consect 
-       
-        
-     
+            menuSobre.addEventListener('click', function() {
+                menuSobre.classList.toggle('item-ativo');
+            });
 
+            menuContato.addEventListener('click', function() {
+                menuContato.classList.toggle('item-ativo');
+            });
+            console.lo("Meu nome é Tafarel");
+        </script>
     </body>
 </html>
+<
